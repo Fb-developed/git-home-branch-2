@@ -558,60 +558,52 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[px\] {
-  height: px;
 }
 
 .h-\[50px\] {
   height: 50px;
 }
 
-.h-\[110px\] {
-  height: 110px;
-}
-
-.h-\[0px\] {
-  height: 0px;
-}
-
-.h-\[800px\] {
-  height: 800px;
-}
-
 .h-\[80px\] {
   height: 80px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[px\] {
-  width: px;
 }
 
 .w-\[200px\] {
   width: 200px;
 }
 
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-\[430px\] {
-  width: 430px;
-}
-
 .w-\[300px\] {
   width: 300px;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-cols-\[\] {
+  grid-template-columns: ;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-\[300px\] {
+  grid-template-columns: 300px;
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-\[300px\] {
+  grid-template-rows: 300px;
 }
 
 .flex-col {
@@ -630,12 +622,20 @@ video {
   gap: 50px;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
 .gap-\[200px\] {
   gap: 200px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.gap-\[100px\] {
+  gap: 100px;
+}
+
+.gap-\[300px\] {
+  gap: 300px;
 }
 
 .rounded-\[20px\] {
@@ -644,10 +644,6 @@ video {
 
 .border-\[2px\] {
   border-width: 2px;
-}
-
-.bg-\[\] {
-  background-color: ;
 }
 
 .bg-\[\#263238\] {
@@ -663,49 +659,45 @@ video {
   padding: 50px;
 }
 
-.pb-\[30px\] {
-  padding-bottom: 30px;
+.p-\[20px\] {
+  padding: 20px;
 }
 
-.pb-\[50px\] {
-  padding-bottom: 50px;
+.pb-\[30px\] {
+  padding-bottom: 30px;
 }
 
 .pb-\[40px\] {
   padding-bottom: 40px;
 }
 
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
+}
+
 .text-center {
   text-align: center;
-}
-
-.text-start {
-  text-align: start;
-}
-
-.text-\[64px\] {
-  font-size: 64px;
 }
 
 .text-\[30px\] {
   font-size: 30px;
 }
 
-.text-\[250px\] {
-  font-size: 250px;
-}
-
-.text-\[25px\] {
-  font-size: 25px;
-}
-
-.text-\[\] {
-  color: ;
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 @media (min-width: 768px) {
@@ -727,6 +719,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-\[300px\] {
+    gap: 300px;
   }
 
   .md\:p-\[50px\] {
